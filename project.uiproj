@@ -1,0 +1,6 @@
+{
+  "Name": "Practice Queues_Dispatcher",
+  "ProjectType": "Process",
+  "Description": "Dispatcher process that adds each row in the input file as a queue item to an Orchestrator queue.",
+  "MainFile": "Main.xaml"
+}
