@@ -81,7 +81,7 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Dispatcher (Producer) process that adds each row in the input file as a queue item to an Orchestrator queue." DisplayName="Add bank account information" sap:VirtualizedContainerService.HintSize="589.3333333333333,563.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Dispatcher (Producer) process that adds each row in the input file as a queue item to an Orchestrator queue." DisplayName="Add bank account information" sap:VirtualizedContainerService.HintSize="704,726" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_OutputExcel" />
     </Sequence.Variables>
@@ -98,6 +98,7 @@
         </InArgument>
       </ui:ReadRange.Range>
     </ui:ReadRange>
+    <ui:LogMessage DisplayName="メッセージをログ" sap:VirtualizedContainerService.HintSize="484,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;さようなら&quot;]" />
     <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_OutputExcel]" DisplayName="For Each Row in Excel" sap:VirtualizedContainerService.HintSize="484,376" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
